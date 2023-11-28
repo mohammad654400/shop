@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styleHome.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <p>FASCO</p>
+
+      <ul class="header-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li>
+          <a href="#"><button class="btnNav">Sign up</button></a>
+        </li>
+      </ul>
+      <!-- // -->
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Home</a></li>
+          <li><a class="menu__item" href="#">About</a></li>
+          <li><a class="menu__item" href="#">Team</a></li>
+          <li><a class="menu__item" href="#">Contact</a></li>
+          <li><a class="menu__item" href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <!-- // -->
+    </nav>
+
+    <header>
+      <div class="body-header-image">
+        <img id="header-img1" src="../img/image 227.png" alt="" />
+      </div>
+
+      <div class="body-header-center">
+        <img class="image-header-center" src="../img/image (8).png" alt="" />
+
+        <h1>ULTIMATE</h1>
+        <h2>SALE</h2>
+        <p>NEW COLLECTION</p>
+
+        <button>SHOP NOW</button>
+        <img class="image-header-center" src="../img/image (9).png" alt="" />
+      </div>
+
+      <div class="body-header-image" id="body-header-image">
+        <img id="header-img2" src="../img/image 2 28.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <section class="brands">
+        <div>
+          <img class="brands-img" src="../img/logo.png" alt="" />
+          <img class="brands-img" src="../img/logo (1).png" alt="" />
+          <img class="brands-img" src="../img/logo (2).png" alt="" />
+          <img class="brands-img" src="../img/logo (3).png" alt="" />
+          <img class="brands-img" src="../img/logo (4).png" alt="" />
+        </div>
+      </section>
+
+      <section id="new-arrivals">
+        <h1>New Arrivals</h1>
+        <p class="new-arrivals-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+          sollicitudin
+        </p>
+        <nav id="nav-arrivals">
+          <ul id="nav-ul-arrivals" class="nav-ul-arrivals">
+            <li>
+              <a data-category data-content="men" href="#" class="nav-arrivals"
+                >Men’s Fashion</a
+              >
+            </li>
+            <li>
+              <a
+                data-category
+                data-content="women"
+                href="#"
+                class="nav-arrivals"
+                >Women’s Fashion</a
+              >
+            </li>
+            <li>
+              <a
+                data-category
+                data-content="child"
+                href="#"
+                class="nav-arrivals"
+                >child Accessories</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <input
+          type="search"
+          id="search-input"
+          placeholder="search...."
+          aria-label="search through site content"
+        />
+
+        <div id="card-template">
+          <li data-content="womanFashion" class="card-item">
+            <div class="card-body">
+              <div id="card-image" class="card-image"></div>
+              <div class="card-title-container">
+                <span id="card-title" class="card-title">i</span>
+                <div id="card-star" class="card-star"></div>
+              </div>
+              <h3>Al Karam</h3>
+              <h4>(4.1k) Customer Reviews</h4>
+              <div class="price">
+                <h2 id="price">$95.50</h2>
+                <h5 id="Condition">i</h5>
+              </div>
+            </div>
+          </li>
+        </div>
+
+        <article>
+          <ul class="card-container"></ul>
+          <div class="view-more">
+            <button id="view-more">View More</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="../js/shopHome.js"></script>
+  </body>
+</html>
