@@ -54,6 +54,7 @@ var data = [
     category: categories.child,
   },
   {
+    id: 3,
     title: "White Dress",
     desc: "hii",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgL-gLmAMKrxYNSLUE9Zeuf9s0EG4DM-XFeb2B7aly3SZy0fJ-wLPF4wYNOkUh1NNIGxw&usqp=CAU",
@@ -63,6 +64,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 4,
     title: "Colorful Dress",
     desc: "hii",
     img: "https://media.kingapp.pl/media/f022b960-8ac0-11ea-919c-6271856f468d/2a472578-e2ae-11ea-a83a-6271856f468d/t_s_h_360_w_263.jpeg",
@@ -72,6 +74,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 5,
     title: "White Shirt",
     desc: "hii",
     img: "https://static.vecteezy.com/system/resources/thumbnails/012/915/053/small/happy-asian-girl-in-coat-posing-with-peace-sign-studio-shot-of-laughing-japanese-woman-taking-self-photo.jpg",
@@ -81,6 +84,7 @@ var data = [
     category: categories.men,
   },
   {
+    id: 6,
     title: "Shiny Dress",
     desc: "hii",
     img: "https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2022/10/0303203166GRN_Women-Kurti_Fashion-Bug-Sri-Lanka-3.jpg",
@@ -90,6 +94,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 7,
     title: "Long Dress",
     desc: "hii",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRj4w3UZ8ReAV13JoTNbijjZtp2irgjcIsybuwbQWdVrs1dzPHHy2H6sClvq8oh35_n24&usqp=CAU",
@@ -99,6 +104,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 8,
     title: "Full Sweater",
     desc: "hii",
     img: "https://img.freepik.com/premium-photo/gorgeous-sensual-blonde-woman-fashion-antique-white-dress_149155-2875.jpg?w=996",
@@ -108,6 +114,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 9,
     title: "White Dress",
     desc: "hii",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgL-gLmAMKrxYNSLUE9Zeuf9s0EG4DM-XFeb2B7aly3SZy0fJ-wLPF4wYNOkUh1NNIGxw&usqp=CAU",
@@ -117,6 +124,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 10,
     title: "Colorful Dress",
     desc: "hii",
     img: "https://media.kingapp.pl/media/f022b960-8ac0-11ea-919c-6271856f468d/2a472578-e2ae-11ea-a83a-6271856f468d/t_s_h_360_w_263.jpeg",
@@ -126,6 +134,7 @@ var data = [
     category: categories.women,
   },
   {
+    id: 11,
     title: "White Shirt",
     desc: "hii",
     img: "https://static.vecteezy.com/system/resources/thumbnails/012/915/053/small/happy-asian-girl-in-coat-posing-with-peace-sign-studio-shot-of-laughing-japanese-woman-taking-self-photo.jpg",
@@ -164,6 +173,7 @@ function drawCard(value) {
 
     htmlRes += copy.innerHTML;
   });
+  
 
   cardContainer.innerHTML = htmlRes;
 }
@@ -182,6 +192,7 @@ categoriesElements.forEach((categoryElement) => {
 
     selectedCategory = e.target.getAttribute("data-content");
     drawCard(input.value);
+
     prevElement = e.target;
   });
 });
@@ -200,4 +211,10 @@ input.addEventListener("input", function (event) {
   var value = event.target.value;
 
   drawCard(value);
+});
+
+cardContainer.addEventListener("click", function (event) {
+  let card = event.target;
+  window.location.href="item-shop.html";
+ 
 });

@@ -68,6 +68,11 @@ header {
 .dropdown {
   display: none;
 }
+#ul-profile {
+  display: none;
+  width: 100%;
+  justify-content: space-around;
+}
 .body-header-center {
   width: 30%;
   height: 100%;
@@ -298,8 +303,25 @@ header {
     margin-left: 2%;
   }
 
-  .new-arrivals-p {
-    width: 75%;
+  #new-arrivals p {
+    width: 100%;
+  }
+  .nav-ul-arrivals li a {
+    width: 150px;
+  }
+  .body-header-image {
+    width: auto;
+  }
+  #header-img1 {
+    position: absolute;
+    width: auto;
+    z-index: 0;
+  }
+  .body-header-center h1 {
+    font-size: 71px;
+  }
+  .body-header-center h2 {
+    font-size: 157px;
   }
 
   header {
@@ -334,6 +356,51 @@ header {
     flex-wrap: nowrap;
   }
 }
+@media only screen and (max-width: 700px) {
+  header {
+    direction: rtl;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: 94px auto 0;
+    background-image: url("../img/thom-bradley-mwa_nzFpnJw-unsplash.jpg");
+    background-size: cover;
+  }
+  .body-header-image {
+    display: none;
+  }
+  .body-header-center {
+    width: 100%;
+  }
+  main .brands div {
+    width: 100%;
+  }
+  main .brands div .brands-img {
+    width: 40%;
+    background-size: cover;
+  }
+  .card-container li {
+    width: 100%;
+  }
+  #ul-profile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main .brands {
+    display: none;
+  }
+  header {
+    height: auto;
+  }
+  #nav-ul-arrivals {
+    display: none;
+  }
+  #ul-profile {
+    display: flex;
+  }
+}
 
 .brands {
   width: 100%;
@@ -341,6 +408,8 @@ header {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 20px 52.28888px 0px rgba(68, 68, 68, 0.04);
+  display: flex;
+  flex-wrap: wrap;
 }
 .brands div {
   width: 80%;
@@ -378,7 +447,7 @@ main {
   line-height: normal;
   margin-top: 150px;
 }
-#new-arrivals p {
+.new-arrivals-p {
   width: 50%;
   color: #8a8a8a;
   text-align: center;
@@ -585,4 +654,19 @@ article ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.image-profile {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
