@@ -57,21 +57,23 @@
           <span id="colorValue" id="color">color:</span>
 
           <div id="container">
-            <div class="circle" style="background-color: blue"></div>
-            <div class="circle" style="background-color: black"></div>
-            <div class="circle" style="background-color: pink"></div>
+            <div class="circle" name="color" style="background-color: blue"></div>
+            <div class="circle" name="color" style="background-color: black"></div>
+            <div class="circle" name="color" style="background-color: pink"></div>
           </div>
 
           <span>Quantity</span>
 
           <div class="number-container">
             <div id="number">
-              <button id="decrease">-</button>
+              <input type="button" value="-" id="decrease">
               <span id="numberValue">0</span>
-              <button id="increase">+</button>
+              <input type="button" value="+" id="increase">
+
             </div>
-            <input  type="submit" value="send" />
+          
           </div>
+          <input  type="submit" value="send" />
         </form>
       </article>
     </section>

@@ -3,6 +3,7 @@ document.querySelector("#size-m").checked = true;
 // تنظیم اندازه پیش‌فرض
 document.querySelector("#size").textContent = "size:M";
 
+
 let input = document.querySelector("input");
 
 // مدیریت رویداد کلیک روی دکمه‌های رادیویی
@@ -29,8 +30,8 @@ const numberValue = document.getElementById("numberValue");
 const increaseButton = document.getElementById("increase");
 const decreaseButton = document.getElementById("decrease");
 
-let numberValueInt = 0;
-let direction = 1;
+var numberValueInt = 0;
+var direction = 1;
 
 increaseButton.addEventListener("click", () => {
   numberValueInt += direction;
@@ -38,6 +39,8 @@ increaseButton.addEventListener("click", () => {
 });
 
 decreaseButton.addEventListener("click", () => {
-  numberValueInt -= direction;
+  numberValueInt = numberValueInt-direction;
+  console.log(numberValueInt);
+
   numberValue.textContent = numberValueInt;
 });
