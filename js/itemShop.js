@@ -1,12 +1,9 @@
-// تنظیم مقدار پیش‌فرض
 document.querySelector("#size-m").checked = true;
-// تنظیم اندازه پیش‌فرض
 document.querySelector("#size").textContent = "size:M";
 
 
 let input = document.querySelector("input");
 
-// مدیریت رویداد کلیک روی دکمه‌های رادیویی
 document.querySelectorAll("input[name='size']").forEach(function (button) {
     button.addEventListener("click", function (event) {
     console.log(event.target.id);
