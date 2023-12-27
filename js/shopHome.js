@@ -16,6 +16,8 @@ const categoriesElements = document.querySelectorAll("[data-category]");
 
 let selectedCategory = "";
 
+let remove = document.getElementById("removee");
+
 var categories = {
   men: "men",
   women: "women",
@@ -173,7 +175,6 @@ function drawCard(value) {
 
     htmlRes += copy.innerHTML;
   });
-  
 
   cardContainer.innerHTML = htmlRes;
 }
@@ -213,8 +214,13 @@ input.addEventListener("input", function (event) {
   drawCard(value);
 });
 
-cardContainer.addEventListener("click", function (event) {
-  let card = event.target;
-  window.location.href="item-shop.html";
- 
+cardContainer.addEventListener("click", function () {
+  window.location.href = "item-shop.html";
 });
+
+if (remove) {
+  remove.addEventListener("click", function (event) {
+    event.stopPropagation();
+    console.log(1);
+  });
+}
